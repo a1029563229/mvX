@@ -34,7 +34,6 @@ module.exports = {
     },
     plugins: [
         new webpack.NamedModulesPlugin(),
-        new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({ template: path.join(__dirname, '..', 'index.html') })
     ]
 }

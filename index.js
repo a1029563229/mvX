@@ -1,7 +1,7 @@
-import c from './src/main';
-const fn = () => {
-    console.log(c);
-    console.log('%c ES6 syntax!!!', "color: red;");
-}
+// MVC
 
-fn();
+// MVP
+
+// MVVM
+
+console.log(1);
