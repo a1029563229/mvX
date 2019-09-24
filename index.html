@@ -15,19 +15,26 @@
   .list-group {
     margin-top: 50px;
   }
+  .list-group-item {
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    font-size: 20px;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+  }
 </style>
 
 <body>
   <div class="container">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Enter Todo">
+      <input id="input" type="text" class="form-control" placeholder="Enter Todo">
     </div>
     <ul class="list-group">
-      <!-- <li class="list-group-item">Cras justo odio</li>
-      <li class="list-group-item">Dapibus ac facilisis in</li>
-      <li class="list-group-item">Morbi leo risus</li>
-      <li class="list-group-item">Porta ac consectetur ac</li>
-      <li class="list-group-item">Vestibulum at eros</li> -->
+
     </ul>
   </div>
 </body>

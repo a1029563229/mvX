@@ -3,7 +3,9 @@ import { SyncHook } from 'tapable';
 class Observer {
   constructor() {
     this.hooks = {
-      update: new SyncHook(['data'])
+      init: new SyncHook(['todoList']),
+      add: new SyncHook(['todo']),
+      remove: new SyncHook(['index'])
     }
   }
 }

@@ -1,7 +1,6 @@
 // MVC
+import './src/MVC/view';
 
 // MVP
 
 // MVVM
-
-console.log(1);
