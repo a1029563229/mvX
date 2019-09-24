@@ -1,4 +1,10 @@
+import observer from './observer';
 import { initList, addItem, removeItem } from './model';
+import { initTodoView, addTodoView, removeTodoView } from './view';
+
+observer.hooks.init.tap('init', initTodoView);
+observer.hooks.add.tap('add', addTodoView);
+observer.hooks.remove.tap('remove', removeTodoView);
 
 const list = [
   'Cras justo odio',
@@ -38,8 +44,9 @@ function removeTodo(index) {
   }, 200);
 }
 
+fetchTodoList();
+
 export {
-  fetchTodoList,
   addTodo,
   removeTodo
 }
